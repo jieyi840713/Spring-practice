@@ -1,4 +1,4 @@
-package user;
+package com.spring.springpractice.user;
 
 import java.time.LocalDate;
 

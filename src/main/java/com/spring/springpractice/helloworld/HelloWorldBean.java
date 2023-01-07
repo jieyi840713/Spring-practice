@@ -1,4 +1,4 @@
-package helloworld;
+package com.spring.springpractice.helloworld;
 
 public class HelloWorldBean {
     private String message;
