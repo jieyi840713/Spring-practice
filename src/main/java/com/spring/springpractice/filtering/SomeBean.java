@@ -1,9 +1,11 @@
 package com.spring.springpractice.filtering;
 
+import com.fasterxml.jackson.annotation.JsonFilter;
 import com.fasterxml.jackson.annotation.JsonIgnore;
 import com.fasterxml.jackson.annotation.JsonIgnoreProperties;
 
 //@JsonIgnoreProperties({"filed1", "filed2"})
+@JsonFilter("SomeBeanFilter")
 public class SomeBean {
     private String filed1;
     @JsonIgnore
