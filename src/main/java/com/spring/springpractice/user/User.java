@@ -28,7 +28,7 @@ public class User {
 
     @OneToMany(mappedBy = "user")
     @JsonIgnore
-    private List<Post> post;
+    private List<Post> posts;
 
     public User(int id, String name, LocalDate birthDate) {
         this.id = id;
@@ -38,6 +38,14 @@ public class User {
 
     public User() {
 
+    }
+
+    public List<Post> getPosts() {
+        return posts;
+    }
+
+    public void setPosts(List<Post> post) {
+        this.posts = posts;
     }
 
     public int getId() {
@@ -72,4 +80,6 @@ public class User {
                 ", birthDate=" + birthDate +
                 '}';
     }
+
+
 }
